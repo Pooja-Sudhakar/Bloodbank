@@ -1,0 +1,18 @@
+{
+    "donor":
+    {
+        "name":"",
+        "age":"",
+        "phno":"",
+        "bldgrp":"",
+        "location":""
+    },
+    "beneficiary":
+    {
+        "name":"",
+        "bldgrp":"",
+        "location":"",
+        "phno":""
+    }
+
+}

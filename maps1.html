@@ -1,0 +1,40 @@
+<html> 
+<head> 
+  <!-- LEAFLET STYLES --> 
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v1.0.0-rc.1/leaflet.css"> 
+</head> 
+<body> 
+  <div id="map" style="width: 600px; height: 400px;"></div> 
+
+  <!-- LEAFLET LIBRARY --> 
+  <script src="http://cdn.leafletjs.com/leaflet/v1.0.0-rc.1/leaflet.js"></script> 
+
+  <!-- MAPTIKS LIBRARY --> 
+  <script src="https://cdn.maptiks.com/maptiks-leaflet.min.js"></script> 
+  <script>maptiks.trackcode='eeea50dd-64af-495d-9c48-fb3e7babfc77';</script> 
+
+  <!-- MAP CODE --> 
+  <script> 
+    (function(L) { 
+      'use strict'; 
+
+      // MAP 
+      var map = L.map('map', { 
+        center: [13.0827, 80.2707], 
+        zoom: 13, 
+
+        // ENTER THE MAP'S NAME HERE (USER DEFINED) 
+        maptiks_id: "bloodbank", 
+      }); 
+
+      // LAYER 
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', 
+
+        // ENTER THE LAYER'S NAME HERE (USER DEFINED) 
+        maptiks_id: 'bloodbank', 
+      }).addTo(map); 
+    })(window.L); 
+  </script> 
+</body> 
+</html>
